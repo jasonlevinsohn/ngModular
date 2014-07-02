@@ -511,6 +511,7 @@ module.exports = function(grunt) {
        * Watch for new file/folder
        */
       local: {
+        
         files: ['<%= source_dir %>/**', '!<%= source_dir %>/sass/**', '!<%= source_dir %>/**/*.spec.js'],
         tasks: ['newer:copy:local'],
       },
@@ -548,7 +549,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['karma:unit', 'clean:karma', 'copy:karma', 'rename:karma']);
   grunt.registerTask('docs', ['clean:docs', 'concat', 'docker', 'clean:site_js']);
   grunt.registerTask('refresh', ['clean:refresh', 'exec:refresh', 'build']);
-
+  
   /**
    * Build grunt tasks.
    */

@@ -13,7 +13,7 @@ define([
 	return angular.module(config.ngApp, [
 		'ui.router',
 		'myApp.services',
-		'myApp.filters',
+		'myApp.filters'
 		'myApp.directives',
 		'myApp.home'
 	]).config(['$stateProvider', '$urlRouterProvider',
